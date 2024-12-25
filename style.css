@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 4.5s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+/* header content */
+.header{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10vmax;
+}
+
+
+.header span{
+    font-family: "Quintessential", serif;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* tail content */
+
+.tail p{
+    font-size: 2.5vmax;
+    font-weight: 300;
+    font-family: "Montserrat Underline", sans-serif;
+    font-optical-sizing: auto;
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 5.2s;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    color: azure;
+}
+
+.appear{
+    animation-name: appear;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0; 
+    }
+
+    to {
+        opacity: 1; 
+    }
+}
+
+@keyframes dissappear {
+    from {
+        opacity: 1; 
+    }
+
+    to {
+        opacity: 0; 
+    }
+}
+
+
+/* simonsays.html */
+
+.gameMain{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    animation-duration: 3s;
+    animation-name: appear;
+    animation-timing-function: linear;
+}
+
+.hero{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p{
+    text-transform: capitalize;
+    font-family: "Amatic SC", serif;
+    font-size: 4vmax;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #2e2e2e;
+}
+
+.foot{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 25%;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 25%;
+}
+
+.foot .box{
+    border: 0;
+    width: 16%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+button{
+    width: 90%;
+    height: 90%;
+    border-radius: 45px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    border: 2px outset rgb(32, 32, 32);
+    transition: all 0.2s ease-out;
+    animation-duration: 0.09s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.box.pink{
+    background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.box.green{
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+.box.yellow{
+    background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+}
+
+.box.red{
+    background: linear-gradient(102.2deg, rgb(250, 45, 66) 9.6%, rgb(245, 104, 104) 96.1%);
+}
+
+.box.blue{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.box.grey{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.buttonActive{
+    animation-name: animateButton;
+}
+
+button.pink:hover{
+    box-shadow: 30px 0 50px 15px rgba(196, 113, 245, 0.9) , -30px 0 50px 15px rgba(250, 113, 205, 0.9);
+}
+
+button.green:hover{
+    box-shadow: 30px 0 50px 15px rgba(182, 244, 146, 0.9) , -30px 0 50px 15px rgba(51, 139, 147 , 0.9);
+}
+
+button.yellow:hover{
+    box-shadow: 30px 0 50px 15px rgba(255, 200, 124, 0.9) , -30px 0 50px 15px rgba(252, 251, 121, 0.9);
+}
+
+button.red:hover{
+    box-shadow: 30px 0 50px 15px rgba(250, 45, 66, 0.9) , -30px 0 50px 15px rgba(245, 104, 104, 0.9);
+}
+
+button.blue:hover{
+    box-shadow: 30px 0 50px 15px rgba(106, 17, 203, 0.9) , -30px 0 50px 15px 	rgba(37, 117, 252, 0.9);
+}
+
+button.grey:hover{
+    box-shadow: 30px 0 50px 15px rgba(44, 62, 80, 0.9), -30px 0 50px 15px 	rgb(189, 195, 199, 0.9);
+}
+
+@keyframes animateButton{
+    from{
+        scale: 1;
+    }
+
+    to{
+       scale: 0.9;
+    }
+}
